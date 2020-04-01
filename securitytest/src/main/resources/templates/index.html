@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="UTF-8">
+<title>Thymeleaf 예제</title>
+</head>
+<body>
+<h1>Thymeleaf 예제</h1>
+<img  src="star.png"><br>
+ <a sec:authorize="isAuthenticated()" th:href="@{/logout}">로그아웃</a>
+
+<span th:text="${user.id}"></span><br/>
+<span th:text="${user.name}"></span><br/>
+<span th:text="${user.role}"></span><br/>
+</body>
+</html>

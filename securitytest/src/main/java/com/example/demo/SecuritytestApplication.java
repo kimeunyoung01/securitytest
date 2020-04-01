@@ -20,8 +20,8 @@ public class SecuritytestApplication {
 	
 	public static void main(String[] args) {
 		
-		//DBManager.insertBook(new MemberVo("tiger", PasswordEncoderFactories.createDelegatingPasswordEncoder().encode("tiger"), "홍길동", "user"));
-		//DBManager.insertBook(new MemberVo("master", PasswordEncoderFactories.createDelegatingPasswordEncoder().encode("1234"), "유진탁", "ADMIN"));
+//		DBManager.insertBook(new MemberVo("tiger", PasswordEncoderFactories.createDelegatingPasswordEncoder().encode("tiger"), "홍길동", "user"));
+//		DBManager.insertBook(new MemberVo("master", PasswordEncoderFactories.createDelegatingPasswordEncoder().encode("1234"), "유진탁", "ADMIN"));
 		System.out.println("사용자 추가됨");
 		SpringApplication.run(SecuritytestApplication.class, args);
 	}
