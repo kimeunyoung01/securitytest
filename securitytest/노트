@@ -1,0 +1,51 @@
+<< 스프링 시큐리티 >>
+스프링이 제공하는 로그인폼을 이용해 봐요.
+
+<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+</dependency>
+
+위의 설정을 추가하면
+스프링이 제공하는 loginForm을 사용할 수 있어요.
+
+기본적으로 스프링시큐리티가 "user"사용자 명을 제공합니다.
+암호는 console에 출력이 되어 있어요.
+
+==> 이게 뭡니까?
+	db랑 연동해야지요!!!!
+	
+
+---------------------------------------------------------
+
+	
+
+인증: 로그인 처리 
+인가: 권한설정==> 특정 서비스에 접근할 수 있는 권한
+					role설정
+	
+
+회원의 정보를 위한 테이블을 다음과 같이 생성해요.
+create table member100(
+	id varchar2(20) primary key,
+	pwd varchar2(100),
+	name varchar2(20),
+	role varchar2(20)
+);
+
+패스워드는 암호화 하면 길어지기 때문에 여유있게 길이를 정해 줘요.
+회원 등록을 위한 기능을 추가해요.
+회원 검색을 위한 기능을 추가해요.(id)
+
+
+
+
+
+
+
+
+
+
+
+
+
